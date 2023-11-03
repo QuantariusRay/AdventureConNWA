@@ -1,0 +1,63 @@
+:host {
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.group {
+  background-color: hsla(var(--ig-surface-500));
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  width: 796px;
+  min-width: 50px;
+  min-height: 50px;
+}
+.row-layout {
+  display: flex;
+}
+.group_1 {
+  border-color: hsla(var(--ig-gray-900));
+  border-style: solid;
+  justify-content: center;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+}
+.text {
+  text-align: center;
+  color: hsla(var(--ig-gray-900));
+  height: max-content;
+  min-width: min-content;
+}
+.h1 {
+  text-align: center;
+  height: max-content;
+  min-width: min-content;
+}
+.text_1 {
+  text-align: center;
+  color: hsla(var(--ig-gray-900));
+  margin: 8px 0;
+  height: max-content;
+  min-width: min-content;
+}
+.image {
+  object-fit: cover;
+  width: 640px;
+  min-width: 0;
+  min-height: 0;
+  flex-shrink: 0;
+}
+.button {
+  --igx-button-foreground: hsla(var(--ig-gray-100));
+  --igx-button-background: hsla(var(--ig-primary-500));
+  height: max-content;
+  align-self: center;
+}
