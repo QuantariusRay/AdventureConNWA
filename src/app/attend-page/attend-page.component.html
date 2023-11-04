@@ -1,57 +1,79 @@
-<igx-navbar class="navbar">
-  <igx-navbar-title class="navbar-content">
-    <h6 class="h6">
-      AdventureCon
-    </h6>
-    <button igxButton="flat" igxRipple routerLink="/home-page" class="button">
-      Home
-    </button>
-    <button igxButton="flat" igxRipple routerLink="/attend-page" class="button">
-      Attend
-    </button>
-    <button igxButton="flat" igxRipple class="button">
-      Venue
-    </button>
-    <button igxButton="flat" igxRipple class="button">
-      Sponsors
-    </button>
-  </igx-navbar-title>
-</igx-navbar>
 <div class="column-layout group">
   <div class="row-layout group_1">
-    <h2 class="h2">
+    <h2 class="page-title">
       Badge Selections
     </h2>
   </div>
   <div class="row-layout group_2">
+
     <igx-card type="outlined" class="card">
       <igx-card-header>
-        <h3 igxCardHeaderTitle>
+        <h3 igxCardHeaderTitle class="good">
           Single Day Admission
         </h3>
-        <h5 igxCardHeaderSubtitle>
-          Subtitle goes here...
-        </h5>
+        <div igxCardHeaderSubtitle>
+          <div>
+            <div class="cost">
+              <span class="price good">$20.00 / 1 day</span>
+            </div>
+            <hr/>
+            <ul class="benefits">
+              <li>Entry to Ballroom and Breakouts</li>
+              <li>Game Library Access</li>
+              <li>Play 2 Win Tables</li>
+              <li>Exhibitor Hall Access</li>
+              <li>Event Registration</li>
+            </ul>
+          </div>
+        </div>
       </igx-card-header>
     </igx-card>
+
     <igx-card type="outlined" class="card">
       <igx-card-header>
-        <h3 igxCardHeaderTitle>
+        <h3 igxCardHeaderTitle class="better">
           General Admission
         </h3>
-        <h5 igxCardHeaderSubtitle>
-          Subtitle goes here...
-        </h5>
+        <div igxCardHeaderSubtitle>
+          <div>
+            <div class="cost">
+              <span class="price better">$50.00 / 3 day</span>
+            </div>
+            <hr/>
+            <ul class="benefits">
+              <li>Entry to Ballroom and Breakouts</li>
+              <li>Game Library Access</li>
+              <li>Play 2 Win Tables</li>
+              <li>Exhibitor Hall Access</li>
+              <li>Event Registration</li>
+            </ul>
+          </div>
+        </div>
       </igx-card-header>
     </igx-card>
+
     <igx-card type="outlined" class="card_1">
       <igx-card-header>
-        <h3 igxCardHeaderTitle>
+        <h3 igxCardHeaderTitle class="best">
+          <igx-icon>star</igx-icon>
           VIP
+          <igx-icon>star</igx-icon>
         </h3>
-        <h5 igxCardHeaderSubtitle>
-          Subtitle goes here...
-        </h5>
+        <div igxCardHeaderSubtitle>
+          <div>
+            <div class="cost">
+              <span class="price best">$75.00 / 3 day</span>
+            </div>
+            <hr/>
+            <ul class="benefits">
+              <li>Entry to Ballroom and Breakouts</li>
+              <li>Game Library Access</li>
+              <li>Play 2 Win Tables</li>
+              <li>Exhibitor Hall Access</li>
+              <li>Event Registration</li>
+            </ul>
+          </div>
+        </div>
       </igx-card-header>
     </igx-card>
   </div>

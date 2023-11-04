@@ -6,24 +6,74 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.navbar {
-  height: max-content;
-  min-width: min-content;
-  align-self: stretch;
-}
-.navbar-content {
-  gap: 1rem;
-}
-.h6 {
-  margin: 0;
-}
-.h2 {
-  height: max-content;
-  min-width: min-content;
-}
+
 .button {
   height: max-content;
 }
+
+h3[igxCardHeaderTitle] {
+  font-size: 24px;
+  padding: 8px;
+  text-align: center;
+
+  &.good {
+    background-color: black;
+    color: white;
+  }
+
+  &.better {
+    background-color: #00BCD4;
+    color: white;
+  }
+
+  &.best {
+    background-color: #FFD700;
+    color: black;
+  }
+}
+
+.cost {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+
+  &:has(span.best) {
+    background: linear-gradient(#6A1B9A, black);
+  }
+
+  span {
+    padding: 16px;
+    border-radius: 16px;
+    font-size: 32px;
+
+    &.price.good {
+      background-color: black;
+      color: white;
+    }
+
+    &.price.better {
+      background-color: #00BCD4;
+      color: white;
+    }
+
+    &.price.best {
+      background-color: #FFD700;
+      color: black;
+    }
+  }
+}
+
+.benefits {
+  padding: 32px 16px;
+  margin: 0 16px;
+  list-style-type: disc;
+  min-height: 20rem;
+
+  > li:not(:first-of-type) {
+    margin-top: 8px;
+  }
+}
+
 .column-layout {
   display: flex;
   flex-direction: column;
@@ -33,7 +83,6 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  height: 842px;
   min-width: 50px;
   min-height: 50px;
 }
@@ -65,4 +114,12 @@
   min-width: 320px;
   align-self: stretch;
   flex-shrink: 0;
+}
+
+.igx-card {
+  border-radius: 0 !important;
+}
+
+.igx-card-header {
+  padding: 0;
 }

@@ -15,16 +15,22 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
+  flex: 1;
   width: 796px;
   min-width: 50px;
   min-height: 50px;
+  padding: 0 11rem;
 }
 .row-layout {
   display: flex;
 }
+
+hr {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .group_1 {
-  border-color: hsla(var(--ig-gray-900));
-  border-style: solid;
   justify-content: center;
   align-items: stretch;
   align-content: flex-start;
@@ -35,18 +41,20 @@
   color: hsla(var(--ig-gray-900));
   height: max-content;
   min-width: min-content;
+  margin-bottom: 24px;
 }
 .h1 {
   text-align: center;
   height: max-content;
   min-width: min-content;
+  font-family: 'MedievalSharp', serif;
 }
 .text_1 {
   text-align: center;
   color: hsla(var(--ig-gray-900));
-  margin: 8px 0;
   height: max-content;
   min-width: min-content;
+  margin: 24px 0;
 }
 .image {
   object-fit: cover;
@@ -60,4 +68,5 @@
   --igx-button-background: hsla(var(--ig-primary-500));
   height: max-content;
   align-self: center;
+  padding: 2rem;
 }

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import {
+  IgxButtonDirective,
   IgxCardComponent,
   IgxCardHeaderComponent,
   IgxNavbarComponent,
-  IgxNavbarTitleDirective
+  IgxNavbarTitleDirective, IgxRippleDirective
 } from '@infragistics/igniteui-angular';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sponsors-page',
@@ -14,7 +16,10 @@ import {
     IgxNavbarTitleDirective,
     IgxNavbarComponent,
     IgxCardHeaderComponent,
-    IgxCardComponent
+    IgxCardComponent,
+    IgxButtonDirective,
+    IgxRippleDirective,
+    RouterLink
   ],
   standalone: true
 })

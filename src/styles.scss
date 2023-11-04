@@ -13,6 +13,10 @@ $custom-palette: palette(
   $surface: #fff);
 @include theme($palette: $custom-palette, $roundness: 0.5);
 
+@font-face {
+  font-family: 'MedievalSharp';
+  src: url('/assets/MedievalSharp-Regular.ttf');
+}
 body {
   background: hsla(var(--ig-surface-500));
   color: var(--ig-surface-500-contrast);
@@ -26,6 +30,13 @@ html, body {
   h1, h2, h3, h4, h5, h6, p, .ig-typography__body-1 {
     margin: 0;
   }
+}
+
+h2.page-title {
+  font-family: 'MedievalSharp', serif !important;
+  height: max-content;
+  min-width: min-content;
+  margin: 16px 0;
 }
 
 .outer-wrapper > *:not(router-outlet) {

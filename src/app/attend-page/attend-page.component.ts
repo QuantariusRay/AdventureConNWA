@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import {
   IgxButtonDirective,
   IgxCardComponent,
-  IgxCardHeaderComponent,
+  IgxCardHeaderComponent, IgxIconComponent,
   IgxNavbarComponent, IgxNavbarTitleDirective, IgxRippleDirective
 } from '@infragistics/igniteui-angular';
 import { RouterLink } from '@angular/router';
@@ -18,7 +18,8 @@ import { RouterLink } from '@angular/router';
     IgxCardHeaderComponent,
     IgxButtonDirective,
     IgxRippleDirective,
-    RouterLink
+    RouterLink,
+    IgxIconComponent
   ],
   standalone: true
 })

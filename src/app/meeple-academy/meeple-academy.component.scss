@@ -6,21 +6,7 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.navbar {
-  height: max-content;
-  min-width: min-content;
-  align-self: stretch;
-}
-.navbar-content {
-  gap: 1rem;
-}
-.h6 {
-  margin: 0;
-}
-.h2 {
-  height: max-content;
-  min-width: min-content;
-}
+
 .image {
   object-fit: cover;
   min-width: 0;
@@ -39,7 +25,6 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  height: 917px;
   min-width: 50px;
   min-height: 50px;
 }
@@ -69,9 +54,16 @@
   min-width: 50px;
   min-height: 50px;
 }
+
 .card {
-  width: 320px;
   height: max-content;
-  min-width: 320px;
-  flex-shrink: 0;
+}
+
+.grid-layout {
+  margin-top: 16px;
+  padding: 0 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
 }

@@ -6,21 +6,7 @@
   align-items: stretch;
   align-content: flex-start;
 }
-.navbar {
-  height: max-content;
-  min-width: min-content;
-  align-self: stretch;
-}
-.navbar-content {
-  gap: 1rem;
-}
-.h6 {
-  margin: 0;
-}
-.h2 {
-  height: max-content;
-  min-width: min-content;
-}
+
 .button {
   height: max-content;
 }
@@ -33,7 +19,6 @@
   align-items: stretch;
   align-content: flex-start;
   position: relative;
-  height: 842px;
   min-width: 50px;
   min-height: 50px;
 }
