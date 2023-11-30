@@ -1,40 +1,57 @@
 :host {
   height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "image image"
+    "lead lead"
+    "content content";
+  grid-template-rows: 1fr 6rem 1fr;
+
+  @media(min-width: 768px) {
+    grid-template-areas:
+    "lead lead"
+    "content image";
+    grid-template-rows: 10rem 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.page-title {
+  grid-area: lead;
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 2rem;
+
+  @media(min-width: 768px) {
+    padding: 0;
+    font-size: 3rem;
+  }
 }
 
 .text {
-  margin: 0 64px;
-  width: 722px;
+  grid-area: content;
   height: max-content;
   min-width: min-content;
-  font-size: 28px;
-  line-height: 40px;
-}
-.image {
-  object-fit: cover;
-  width: 742px;
-  min-width: 0;
-  min-height: 0;
-  flex-shrink: 0;
+  text-align: center;
+  padding: 0 2rem;
+
+  @media(min-width: 768px) {
+    margin: 0 64px;
+    font-size: 28px;
+    line-height: 40px;
+    padding: 0;
+  }
 }
 
-.column-layout {
-  display: flex;
-  flex-direction: column;
+.image {
+  grid-area: image;
+  object-fit: cover;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
 }
-.group {
-  justify-content: flex-start;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  min-width: 50px;
-  min-height: 50px;
-}
+
 .row-layout {
   display: flex;
 }

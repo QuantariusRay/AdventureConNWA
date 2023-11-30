@@ -23,7 +23,9 @@ body {
 }
 
 html, body {
+  width: 100%;
   height: 100%;
+  display: block;
 }
 
 .ig-typography {
@@ -41,4 +43,12 @@ h2.page-title {
 
 .outer-wrapper > *:not(router-outlet) {
   width: 100%;
+}
+
+@media(max-width: 768px) {
+
+  h1 {
+    font-size: 3rem !important;
+    line-height: 1.8 !important;
+  }
 }
