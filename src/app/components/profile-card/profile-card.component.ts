@@ -34,7 +34,7 @@ export interface Member {
       </igx-card-header>
       <igx-card-content>
         <div>
-          <span>Favorite Mechanic:</span>
+          <span>Favorite Mechanic: </span>
           <span>{{ member.faveMechanic }}</span>
         </div>
 

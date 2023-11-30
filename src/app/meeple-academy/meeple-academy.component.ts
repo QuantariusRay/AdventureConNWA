@@ -34,8 +34,8 @@ export class MeepleAcademyComponent {
       name: 'Jared',
       title: 'President',
       img: '',
-      faveGame: 'Shadows of Brimstone',
-      faveMechanic: 'Dungeon Crawling',
+      faveGame: 'Blood Rage',
+      faveMechanic: 'Dice Placement',
     },
     {
       name: 'Jesse',
@@ -49,28 +49,28 @@ export class MeepleAcademyComponent {
       title: 'Event Director',
       img: '',
       faveGame: 'Spirit Island',
-      faveMechanic: 'Engine Building',
+      faveMechanic: 'Action Drafting',
     },
     {
       name: 'Liz',
       title: 'Marketing Director',
       img: '',
-      faveGame: '???',
-      faveMechanic: '???',
+      faveGame: 'War of the Ring',
+      faveMechanic: 'Trading',
     },
     {
       name: 'Clancy',
       title: 'Program Director',
       img: '',
-      faveGame: '???',
-      faveMechanic: '???',
+      faveGame: 'Champions of Midgar',
+      faveMechanic: 'Worker Placement',
     },
     {
       name: 'Heather',
       title: 'Financial Director',
       img: '',
-      faveGame: '???',
-      faveMechanic: '???',
+      faveGame: 'Kemet: Blood and Sand',
+      faveMechanic: 'Card Drafting',
     }
   ];
 }
