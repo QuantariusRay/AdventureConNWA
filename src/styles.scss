@@ -39,6 +39,11 @@ h2.page-title {
   height: max-content;
   min-width: min-content;
   margin: 16px 0;
+  font-size: 3rem;
+
+  @media(min-width: 768px) {
+    font-size: 3.75rem;
+  }
 }
 
 .outer-wrapper > *:not(router-outlet) {

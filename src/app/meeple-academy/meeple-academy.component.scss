@@ -60,10 +60,22 @@
 }
 
 .grid-layout {
-  margin-top: 16px;
-  padding: 0 64px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 16px;
+  margin-top: 16px;
+  padding: 0 2rem;
+
+  .profile-card {
+    margin-bottom: 1rem;
+  }
+
+  @media(min-width: 768px) {
+    padding: 0 64px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 16px;
+
+    .profile-card {
+      margin-bottom: 0;
+    }
+  }
 }

@@ -6,7 +6,7 @@
     "image image"
     "lead lead"
     "content content";
-  grid-template-rows: 1fr 6rem 1fr;
+  grid-template-rows: 14rem 5rem 1fr;
 
   @media(min-width: 768px) {
     grid-template-areas:
@@ -21,7 +21,7 @@
   grid-area: lead;
   text-align: center;
   padding: 0 2rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
 
   @media(min-width: 768px) {
     padding: 0;

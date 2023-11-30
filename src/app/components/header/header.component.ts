@@ -26,9 +26,9 @@ import { RouterLink } from '@angular/router';
           <button igxButton="flat" igxRipple routerLink="/venue" class="button">
             Venue
           </button>
-          <button igxButton="flat" igxRipple routerLink="/sponsors" class="button">
-            Sponsors
-          </button>
+<!--          <button igxButton="flat" igxRipple routerLink="/sponsors" class="button">-->
+<!--            Sponsors-->
+<!--          </button>-->
           <button igxButton="flat" igxRipple routerLink="/meeple-academy" class="button">
             Meeple Academy
           </button>
