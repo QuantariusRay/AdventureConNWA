@@ -12,6 +12,9 @@ export interface Member {
   img?: string;
   faveGame: string;
   faveMechanic: string;
+  pronoun: string;
+  bio: string;
+  contact: string;
 }
 @Component({
   selector: 'profile-card',
@@ -25,23 +28,28 @@ export interface Member {
             </igx-icon>
           </igx-avatar>
         </div>
-        <h3 igxCardHeaderTitle>
-          {{ member.name }}
-        </h3>
+        <span class="title" igxCardHeaderTitle>
+          {{ member.title }}
+        </span>
         <h5 igxCardHeaderSubtitle>
-            {{ member.title }}
+            {{ member.name }} ({{ member.pronoun }})
         </h5>
+        <span class="contact" igxCardHeaderSubtitle>
+          email: {{ member.contact }}
+        </span>
       </igx-card-header>
       <igx-card-content>
         <div>
-          <span>Favorite Mechanic: </span>
+          <span><strong>Favorite Mechanic: </strong></span>
           <span>{{ member.faveMechanic }}</span>
         </div>
 
         <div>
-          <span>Favorite Game: </span>
+          <span><strong>Favorite Game: </strong></span>
           <span>{{ member.faveGame }}</span>
         </div>
+
+        <p class="bio">{{ member.bio }}</p>
       </igx-card-content>
     </igx-card>
   `,
@@ -52,7 +60,16 @@ export interface Member {
     IgxIconComponent,
     IgxCardContentDirective
   ],
-  standalone: true
+  standalone: true,
+  styles: [`
+    .title, .contact {
+      font-size: 1rem;
+    }
+
+    .bio {
+      margin-top: .5rem;
+    }
+  `]
 })
 export class ProfileCardComponent {
   @Input() member!: Member;
