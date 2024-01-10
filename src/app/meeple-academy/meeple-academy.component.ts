@@ -38,7 +38,7 @@ export class MeepleAcademyComponent {
       faveGame: 'Blood Rage',
       faveMechanic: 'Dice Placement',
       pronoun: 'He/Him',
-      bio: 'Jared is our resident old guy. He’s the one who keeps us focused on our mission, makes sure that we act with compassion, and that we make a better NorthWest Arkansas in the process. From Mega Board Game Conventions to family gatherings, you can find Jared seeking to play games with people he’s never met before.'
+      bio: 'Jared is the one who keeps us focused on our mission, makes sure that we act with compassion, and that we make a better NorthWest Arkansas in the process. From Mega Board Game Conventions to family gatherings, you can find Jared seeking to play games with people he’s never met before.'
     },
     {
       name: 'Jesse',
