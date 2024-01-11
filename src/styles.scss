@@ -8,9 +8,9 @@
 @include typography($font-family: "Inter");
 
 $custom-palette: palette(
-  $primary: #6A1B9A,
-  $secondary: #F5F5F5,
-  $surface: #fff);
+  $primary: #4386C6,
+  $secondary: #F1A11F,
+  $surface: white);
 @include theme($palette: $custom-palette, $roundness: 0.5);
 
 @font-face {

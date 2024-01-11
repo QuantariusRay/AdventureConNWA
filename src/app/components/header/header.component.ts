@@ -49,6 +49,7 @@ import { RouterLink } from '@angular/router';
 
     .h6 {
       margin: 0;
+      color: white;
     }
 
     .button {

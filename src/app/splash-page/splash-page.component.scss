@@ -1,111 +1,59 @@
-:host {
-  height: 100%;
-  display: flex;
-  flex-direction: column-reverse;
-
-  @media(min-width: 768px) {
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: flex-start;
-    flex-direction: row;
-  }
-}
-
-.column-layout {
+.page-container {
   display: flex;
   flex-direction: column;
-}
+  background-color: oklch(60.54% 0.119 249.49);
+  height: 100%;
 
-.group {
-  background-color: hsla(var(--ig-surface-500));
-  justify-content: center;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-  flex: 1;
-  padding: 0 1rem;
+  .splash-text {
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+    text-align: center;
+    color: #fff;
 
-  @media(min-width: 768px) {
-    padding: 0 16rem;
-  }
-
-  @media(min-width: 1200px) {
-    width: 796px;
-    padding: 0 11rem;
-    min-width: 50px;
-    min-height: 50px;
-    flex: auto;
+    @media(min-width: 768px) {
+      flex: 1;
+      padding: 0 16rem;
+      font-size: 1.75rem;
+      line-height: 1.2;
+    }
   }
 }
-.row-layout {
+
+.image-container {
   display: flex;
-}
-
-hr {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.group_1 {
   justify-content: center;
-  align-items: stretch;
-  align-content: flex-start;
-  position: relative;
-}
+  flex: 1;
 
-.text {
-  text-align: center;
-  color: hsla(var(--ig-gray-900));
-  height: max-content;
-  min-width: min-content;
-  margin-bottom: 8px;
+  .logo-image {
+    width: 250px;
+    height: 250px;
 
-  @media(min-width: 768px) {
-    margin-bottom: 24px;
+    @media(min-width: 768px) {
+      width: 500px;
+      height: 500px;
+    }
   }
 }
 
-.h1 {
-  text-align: center;
-  height: max-content;
-  min-width: min-content;
-  font-family: 'MedievalSharp', serif;
-}
-.text_1 {
-  text-align: center;
-  color: hsla(var(--ig-gray-900));
-  height: max-content;
-  min-width: min-content;
-  margin: 24px 0;
-}
+.proceed-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 1rem;
+  flex: 1;
 
-.img-container {
-  height: 20rem;
-  display: block;
-
-  @media(min-width: 768px) {
-    display: none;
+  button {
+    --igx-button-foreground: hsla(var(--ig-gray-100));
+    --igx-button-background: hsla(var(--ig-secondary-500));
+    align-self: center;
+    padding: 1rem;
+    min-width: 10rem;
   }
 
-  @media(min-width: 1200px) {
+  @media(min-width: 768px) {
+    flex: 1;
     display: block;
-    height: 100%;
-    flex: 1 0 640px;
+    text-align: center;
   }
-
-  .image {
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    min-height: 0;
-    flex-shrink: 0;
-  }
-}
-
-.button {
-  --igx-button-foreground: hsla(var(--ig-gray-100));
-  --igx-button-background: hsla(var(--ig-primary-500));
-  height: max-content;
-  align-self: center;
-  padding: 2rem;
 }
