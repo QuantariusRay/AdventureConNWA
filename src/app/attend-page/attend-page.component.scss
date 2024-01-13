@@ -100,6 +100,28 @@ h3[igxCardHeaderTitle] {
 
 .group_2 {
   flex-direction: column;
+}
+
+.group_1, .group_2 {
+  > * {
+    margin-bottom: 1rem;
+  }
+}
+
+.crowdfunding {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .kickstarter-link {
+    max-width: 30rem;
+  }
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -113,11 +135,6 @@ h3[igxCardHeaderTitle] {
   }
 }
 
-.group_1, .group_2 {
-  > * {
-    margin-bottom: 1rem;
-  }
-}
 
 .card {
   width: 320px;
