@@ -141,6 +141,11 @@ h3[igxCardHeaderTitle] {
   height: max-content;
   min-width: 320px;
   flex-shrink: 0;
+  margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .igx-card {
